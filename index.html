@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">DATING SURVEY FORM</h1>
+      
+      </header>
+
+      <form id="survey-form">
+
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        
+        <div class="form-group">
+          <p>Please indicate your gender</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="male"
+              type="radio"
+              class="input-radio"
+              checked
+            />Male</label>
+          <label>
+            <input
+              name="user-recommend"
+              value="Female"
+              type="radio"
+              class="input-radio"
+              checked
+            />Female</label>
+          <label>
+            <input
+              name="user-recommend"
+              value="Intersex"
+              type="radio"
+              class="input-radio"
+              checked
+            />Intersex</label>
+          <label>
+            <input
+              name="user-recommend"
+              value="trans"
+              type="radio"
+              class="input-radio"
+              checked
+            />Trans</label>
+        </div>
+
+        <div class="form-group">
+          <p>How would you describe your personality?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="shy">Shy and naive</option>
+            <option value="brave">Brave and talkative</option>
+            <option value="easy">Easy going and cheerful</option>
+            <option value="honest">Honest and reliable</option>
+            <option value="Sympathetic">Sympathetic and tolerant</option>
+            <option value="open">Open minded</option>
+            <option value="sporty">Sporty</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Do you pay for using the dating app?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="Yes"
+              type="radio"
+              class="input-radio"
+              checked
+            />Yes</label>
+          <label>
+            <input
+              name="user-recommend"
+              value="No"
+              type="radio"
+              class="input-radio"
+            />No</label>
+        </div>
+
+        <div class="form-group">
+          <p>Have you ever developed a relationship with someone from an online dating site or app?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="Yes"
+              type="radio"
+              class="input-radio"
+              checked
+            />Yes</label>
+          <label>
+            <input
+              name="user-recommend"
+              value="No"
+              type="radio"
+              class="input-radio"
+            />No</label>
+        </div>
+
+        <div class="form-group">
+          <p>What kind of relationship are you looking for when surfing on the dating website or app?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="lasting">Looking for lasting relationship</option>
+            <option value="friendship">Looking for friendship</option>
+            <option value="hookups">Looking for hookups</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you recommend the online dating to you friends?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="Yes"
+              type="radio"
+              class="input-radio"
+              checked
+            />Yes</label>
+          <label>
+            <input
+              name="user-recommend"
+              value="No"
+              type="radio"
+              class="input-radio"
+            />No</label>
+        </div>
+
+        <div class="form-group">
+          <p>Any additional thoughts or comments you want to make about online dating?</p>
+          <textarea
+            id="Thoughts"
+            class="input-textarea"
+            name="Thoughts"
+            placeholder="Type here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
